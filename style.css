@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
+}
+
+.container {
+    max-width: 400px; /* Set max width for mobile view */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly increased shadow */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px; /* Larger font size for the title */
+    color: #333; /* Dark gray color for text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 12px; /* Increased padding for better touch targets */
+    font-size: 16px; /* Increased font size */
+    border: 1px solid #ccc; /* Add border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    outline: none; /* Remove default outline */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+input:focus, select:focus {
+    border: 1px solid #007bff; /* Highlight border on focus */
+}
+
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none; /* Remove border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin-top: 20px; /* Space between form and list */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px; /* Increased padding */
+    border-radius: 5px; /* Rounded corners for list items */
+    background-color: #f8f9fa; /* Light background for tasks */
+    margin-bottom: 10px; /* Space between tasks */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+li:hover {
+    background-color: #e2e6ea; /* Darker background on hover */
+}
+
+button.edit, button.delete {
+    background: none; /* No background for edit/delete buttons */
+    border: none;
+    cursor: pointer;
+    color: #dc3545; /* Red color for delete */
+}
+
+button.complete {
+    background-color: #28a745; /* Green color for complete */
+    color: white;
+    border-radius: 5px; /* Rounded corners for complete button */
+}
